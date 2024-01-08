@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oefening</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+  
+ 
+</head>
+
+<body>
+  <navbar>
+    <div id="nav">
+      <nav class="navbar navbar-expand-lg navbar-warning " style="background-color: #FDE100;" >
+        <div class="container-fluid "  bis_skin_checked="1">
+          <a class="navbar-brand">
+            <img src="/pictures and text/foto's/Borussia_Dortmund_logo.svg.png" width="35" height="35"
+              class="d-inline-block align-top" alt="BVB" loading="lazy" style="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" bis_skin_checked="1">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Klassement.html">Virtuele stadiontour</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Info
+                </a>
+                <ul class="dropdown-menu pb-0 active" style="background-color:#FDE100 ;" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-center" href="/Code/html/geschiedenis.html"> Geschiedenis</a></li>
+                  <li><hr class="dropdown-divider bg-black"></li>
+                  <li><a class="dropdown-item text-center" href="/Code/html/teamlijst.html"> Team-lijst</a></li>
+                  <li><hr class="dropdown-divider bg-black"></li>
+                  <li><a class="dropdown-item text-center" href="stadium.html">Stadion</a></li>
+                  <li><hr class="dropdown-divider bg-black"></li>
+                  <li><a class="dropdown-item  text-center " href="fans.html">Fans</a></li>
+                  <li><hr class="dropdown-divider bg-black"></li>
+                </ul>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex"onsubmit="handleSearch(event)">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" data-bs-toggle="tooltip" data-bs-placement="bottom" title="keepers, verdedigers, middenvelders, aanvallers."> 
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </navbar>
+
+
+
+<main>
+  <h1 class="text-center mb-4 mt-4">TEAM BORUSSIA DORTMUND (SEIZOEN 2023/2024)</h1>
+    <div class="container my-5">
+        
+        
+        <div class="row justify-content-center mb-5">
+          <figure class="col-12">
+            <img src="/pictures and text/foto's/First-Team_bvbnachrichtenbild_regular.jpg" class="img-fluid col-12" alt="Team Photo">
+            <figcaption> Teamfoto</figcaption>
+          </figure>
+        </div>
+           
+        
+        
+        <h3 class="text-center fs-1 pb-2">Keepers</h3>
+        <div class="row" id="keepers">
+          <div class="col-12 col-md-3 mb-2 ">
+            <figure class="card">
+              <img src="/pictures and text/foto's/kobel foto.jpg" class="card-img-top">
+              <div class="card-body" >
+                <h5 class="card-title">1 Gregor Kobel</h5>
+              </div>
+            </figure>
+          </div>
+          <div class="col-12 col-md-3 mb-2">
+            <div class="card">
+            <img src="/pictures and text/foto's/meyer foto.jpg" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">33 Alexander Meyer</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mb-2">
+            <div class="card">
+              <img src="/pictures and text/foto's/Marcel-Lotka_autogrammkarte.jpg" class="card-img-top" >
+              <div class="card-body">
+                <h5 class="card-title">35 Marcel Lotka</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="text-center fs-1 pb-2 pt-5">Verdedigers</h3>
+        <div class="row" id="verdedigers">
+            <div class="col-12 col-md-3 mb-3">
+              <div class="card">
+                <img src="/pictures and text/foto's/Mateu-Morey-Bauza_autogrammkarte.jpg" class="card-img-top" >
+                <div class="card-body">
+                  <h5 class="card-title">2 Mateu Morey</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 mb-3">
+              <div class="card">
+                <img src="/pictures and text/foto's/Nico-Schlotterbeck_autogrammkarte.jpg" class="card-img-top" >
+                <div class="card-body">
+                  <h5 class="card-title">4 Nico Schlotterbeck</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3 mb-3">
+              <div class="card">
+                <img src="/pictures and text/foto's/Ramy-Bensebaini_autogrammkarte.jpg" class="card-img-top" >
+                <div class="card-body">
+                  <h5 class="card-title">5 Rami Bensabaini</h5>
+                </div>
+              </div>
+            </div>
+           
+              <div class="col-12 col-md-3 mb-3">
+                <div class="card">
+                  <img src="/pictures and text/foto's/Mats-Hummels_autogrammkarte.jpg" class="card-img-top" >
+                  <div class="card-body">
+                    <h5 class="card-title">15 Mats Hummels</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 mb-3">
+                <div class="card">
+                  <img src="/pictures and text/foto's/Marius-Wolf_autogrammkarte.jpg" class="card-img-top" >
+                  <div class="card-body">
+                    <h5 class="card-title">17 Marius Wolf</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 mb-3">
+                <div class="card">
+                  <img src="/pictures and text/foto's/Thomas-Meunier_autogrammkarte.jpg" class="card-img-top" >
+                  <div class="card-body">
+                    <h5 class="card-title">24 Thomas Meunier</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 mb-3">
+                <div class="card">
+                  <img src="/pictures and text/foto's/Niklas-Suele_autogrammkarte.jpg" class="card-img-top" >
+                  <div class="card-body">
+                    <h5 class="card-title">25 Niklas Sule</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 mb-3">
+                <div class="card">
+                  <img src="/pictures and text/foto's/Julian-Ryerson_autogrammkarte.jpg" class="card-img-top" >
+                  <div class="card-body">
+                    <h5 class="card-title">27 Julian Ryerson</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3 mb-3">
+                <div class="card">
+                  <img src="/pictures and text/foto's/Antonios-Papadopoulos_autogrammkarte.jpg" class="card-img-top" >
+                  <div class="card-body">
+                    <h5 class="card-title">47 Antonios Papadoupoulos</h5>
+                  </div>
+                </div>
+              </div>
+              
+              <h3 class="text-center fs-1 pb-2 pt-5">Middenvelders</h3>
+              <div class="row" id="middenvelders">
+                <div class="col-12 col-md-3 mb-3">
+                    <div class="card">
+                      <img src="/pictures and text/foto's/Salih-Oezcan_autogrammkarte.jpg" class="card-img-top" >
+                      <div class="card-body">
+                        <h5 class="card-title">6 Salih Ozcan</h5>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <div class="card">
+                      <img src="/pictures and text/foto's/Giovanni-Reyna_autogrammkarte.jpg" class="card-img-top" >
+                      <div class="card-body">
+                        <h5 class="card-title">7 Giovanni Reyna </h5>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <div class="card">
+                      <img src="/pictures and text/foto's/Felix-Nmecha_autogrammkarte.jpg" class="card-img-top" >
+                      <div class="card-body">
+                        <h5 class="card-title">8 Felix Nmecha</h5>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <div class="card">
+                      <img src="/pictures and text/foto's/Marco-Reus_autogrammkarte.jpg" class="card-img-top" >
+                      <div class="card-body">
+                        <h5 class="card-title">11 Marco Reus</h5>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <div class="card">
+                      <img src="/pictures and text/foto's/Julian-Brandt_autogrammkarte.jpg" class="card-img-top" >
+                      <div class="card-body">
+                        <h5 class="card-title">19 Julian Brandt</h5>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <div class="card">
+                      <img src="/pictures and text/foto's/Marcel-Sabitzer_autogrammkarte.jpg" class="card-img-top" >
+                      <div class="card-body">
+                        <h5 class="card-title">20 Marcel Sabitze</h5>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <div class="card">
+                      <img src="/pictures and text/foto's/Emre-Can_autogrammkarte.jpg" class="card-img-top" >
+                      <div class="card-body">
+                        <h5 class="card-title">23 Emre Can</h5>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <div class="card">
+                     <img src="/pictures and text/foto's/Ole-Pohlmann_autogrammkarte.jpg" class="card-img-top" >
+                        <div class="card-body">
+                            <h5 class="card-title">30 Ole Pohlmann</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3">
+                    <div class="card">
+                      <img src="/pictures and text/foto's/Abdoulaye-Kamara_autogrammkarte.jpg" class="card-img-top" >
+                      <div class="card-body">
+                        <h5 class="card-title">32 Abdoulaye Kamara</h5>
+                      </div>
+                    </div>
+                </div>
+                    
+                <h3 class="text-center fs-1 pb-2">Aanvallers</h3>
+                <div class="row" id="aanvallers">
+                  <div class="col-12 col-md-3 mb-2 ">
+                    <div class="card">
+                      <img src="/pictures and text/foto's/Sebastien-Haller_autogrammkarte.jpg" class="card-img-top">
+                      <div class="card-body">
+                        <h5 class="card-title">0 Sebastian Haller</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="card">
+                      <img src="/pictures and text/foto's/Niclas-Fuellkrug_autogrammkarte.jpg" class="card-img-top">
+                      <div class="card-body">
+                        <h5 class="card-title">14 Niclas Fullkrug </h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="card">
+                      <img src="/pictures and text/foto's/Julien-Duranville_autogrammkarte.jpg" class="card-img-top" >
+                      <div class="card-body">
+                        <h5 class="card-title">16 Julien Duranville</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="card">
+                      <img src="/pictures and text/foto's/Youssoufa-Moukoko_autogrammkarte.jpg" class="card-img-top" >
+                      <div class="card-body">
+                        <h5 class="card-title">18 Youssoufa Moukoko</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="card">
+                      <img src="/pictures and text/foto's/Donyell-Malen_autogrammkarte.jpg" class="card-img-top" >
+                      <div class="card-body">
+                        <h5 class="card-title">21 Donyell Malen</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="card">
+                      <img src="/pictures and text/foto's/Karim-Adeyemi_autogrammkarte.jpg" class="card-img-top" >
+                      <div class="card-body">
+                        <h5 class="card-title">27 Karim Adyemi</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-2">
+                    <div class="card">
+                      <img src="/pictures and text/foto's/Jamie-Bynoe-Gittens_autogrammkarte.jpg" class="card-img-top" >
+                      <div class="card-body">
+                        <h5 class="card-title">42 Jamie Bynoe-Gittens</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            
+                
+                   
+      
+      
+                <div class="container mt-4">
+                  <table class="table table-striped" >                    
+                      <caption>Dortmund Players</caption>
+                      <thead>
+                          <tr>
+                              <th scope="col">Rugnummer</th>
+                              <th scope="col">Naam</th>
+                              <th scope="col">Transfer kost</th>
+                          </tr>
+                      </thead>
+                      <tbody>                       
+                          <tr>
+                              <td>1</td>
+                              <td>Gregor Kobel</td>
+                              <td>€15M</td>
+                          </tr>
+                          <tr>
+                              <td>33</td>
+                              <td>Alexander Meyer</td>
+                              <td>Gratis</td>
+                          </tr>
+                          <tr>
+                            <td>35</td>
+                            <td>Marcel Lotka</td>
+                            <td>Gratis</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Mateu Morey</td>
+                            <td>Gratis</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>Nico Schlotterbeck</td>
+                            <td>€25M</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>Ramy Bensabaini</td>
+                            <td>Gratis</td>
+                          </tr>
+                          <tr>
+                            <td>15</td>
+                            <td>Mats Hummels</td>
+                            <td>€30,5M</td>
+                          </tr>
+                          <tr>
+                            <td>17</td>
+                            <td>Marius Wolf</td>
+                            <td>€5M</td>
+                          </tr>
+                          <tr>
+                            <td>24</td>
+                            <td>Thomas Meunier</td>
+                            <td>Gratis</td>
+                          </tr>
+                          <tr>
+                            <td>25</td>
+                            <td>Niklas Sule</td>
+                            <td>Gratis</td>
+                          </tr>
+                          <tr>
+                            <td>26</td>
+                            <td>Julian Ryerson</td>
+                            <td>€5M</td>
+                          </tr>
+                          <tr>
+                            <td>47</td>
+                            <td>Antonios Papadoupolos</td>
+                            <td>Gratis</td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>Salih Ozcan</td>
+                            <td>€5M</td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>Giovanni Reyna</td>
+                            <td>€10M</td>
+                          </tr>
+                          <tr>
+                            <td>11</td>
+                            <td>Marco Reus</td>
+                            <td>€17M</td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td>Felix Nmecha</td>
+                            <td>€34M</td>
+                          </tr>
+                          <tr>
+                            <td>19</td>
+                            <td>Julian Brandt</td>
+                            <td>€25M</td>
+                          </tr>
+                          <tr>
+                            <td>20</td>
+                            <td>Marcel Sabitzer</td>
+                            <td>€15,5M</td>
+                          </tr>
+                          <tr>
+                            <td>23</td>
+                            <td>Emre Can</td>
+                            <td>€25M</td>
+                          </tr>
+                          <tr>
+                            <td>30</td>
+                            <td>Ole Pohlmann</td>
+                            <td>Gratis</td>
+                          </tr>
+                          <tr>
+                            <td>32</td>
+                            <td>Abdoulaye Kamara</td>
+                            <td>Eigen jeugd</td>
+                          </tr>
+                          <tr>
+                            <td>9</td>
+                            <td>Sebastien Haller</td>
+                            <td>€34,5M</td>
+                          </tr>
+                          <tr>
+                            <td>14</td>
+                            <td>Niclas Fullkrug</td>
+                            <td>€13.1M</td>
+                          </tr>
+                          <tr>
+                            <td>16</td>
+                            <td>Julien Duranville</td>
+                            <td>€15M</td>
+                          </tr>
+                          <tr>
+                            <td>18</td>
+                            <td>Youssoufa Moukoko</td>
+                            <td>Eigen jeugd</td>
+                          </tr>
+                          <tr>
+                            <td>21</td>
+                            <td>Donyell Malen</td>
+                            <td>€30M</td>
+                          </tr>
+                          <tr>
+                            <td>27</td>
+                            <td>Karim Adeyemi</td>
+                            <td>€38M</td>
+                          </tr>
+                          <tr>
+                            <td>43</td>
+                            <td>Jamie Brynoe-Gittens</td>
+                            <td>€90,000</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+
+              <div class="text-center p-3" id="top-button-container">
+                <button onclick="document.body.scrollTop = 0; document.documentElement.scrollTop = 0;" class="btn btn-warning ">
+                    Terug naar top
+                </button>
+              </div>
+    </main>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+  </script>
+  <script>
+    function handleSearch(event) {
+        event.preventDefault();
+        const searchTerm = document.querySelector('input[type="search"]').value.toLowerCase();
+        
+        // Assuming the IDs are lowercase
+        const section = document.getElementById(searchTerm);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            console.log("Section not found");
+        }
+    }
+  </script>
+  
+  </body>
+ 

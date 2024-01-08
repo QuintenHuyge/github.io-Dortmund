@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Virtuele stadiontour </title> 
+<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oefening</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+   
+    #map {
+        height: calc(100vh - 75px); 
+        width: calc(100vw - 75px); 
+        margin: 25px; 
+    }
+</style>
+
+
+
+
+</head>
+<body>
+  <navbar>
+    <div id="nav">
+      <nav class="navbar navbar-expand-lg navbar-warning"  style="background-color: #FDE100;" >
+        <div class="container-fluid "  bis_skin_checked="1">
+          <a class="navbar-brand">
+            <img src="/pictures and text/foto's/Borussia_Dortmund_logo.svg.png" width="35" height="35"
+              class="d-inline-block align-top" alt="BVB" loading="lazy" style="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" bis_skin_checked="1">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Klassement.html">Virtuele stadiontour</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Info
+                </a>
+                <ul class="dropdown-menu pb-0" style="background-color:#FDE100 ;" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-center" href="geschiedenis.html"> Geschiedenis</a></li>
+                  <li><hr class="dropdown-divider bg-black"></li>
+                  <li><a class="dropdown-item text-center" href="teamlijst.html"> Team-lijst</a></li>
+                  <li><hr class="dropdown-divider bg-black"></li>
+                  <li><a class="dropdown-item text-center" href="stadium.html">Stadion</a></li>
+                  <li><hr class="dropdown-divider bg-black"></li>
+                  <li><a class="dropdown-item text-center" href="fans.html">Fans</a></li>
+                  <li><hr class="dropdown-divider bg-black"></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" onsubmit="handleSearch(event)">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" data-bs-toggle="tooltip" data-bs-placement="right" title="">
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </navbar>
+
+  <h1 class="text-center p-3"> Virtuele stadiontour</h1>
+ 
+  <div class="container-fluid p-0">
+    <div class="row no-gutters">
+        <div class="col-12">
+            <div id="map"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function initMap() {
+        var sv = new google.maps.StreetViewService();
+        var panorama = new google.maps.StreetViewPanorama(
+            document.getElementById('map'), {
+                position: {lat: 51.49260064645235, lng: 7.4522863188347195},
+                pov: {heading: 165, pitch: 0},
+                zoom: 1
+            });
+    }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtCQP5YGodxKeuZSVrZajTdAHeJY4sASQ&callback=initMap">
+</script>
+
+
+</html>

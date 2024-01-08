@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.css">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+</head>
+
+<body>
+  <navbar>
+    <div id="nav">
+      <nav class="navbar navbar-expand-lg navbar-warning " style="background-color: #FDE100;" >
+        <div class="container-fluid cont"  bis_skin_checked="1">
+          <a class="navbar-brand" href="#">
+            <img src="/pictures and text/foto's/Borussia_Dortmund_logo.svg.png" width="35" height="35"
+              class="d-inline-block align-top" alt="BVB" loading="lazy" style="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" bis_skin_checked="1">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Klassement.html">Virtuele stadiontour</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Info
+                </a>
+                <ul class="dropdown-menu pb-0 text-center active" style="background-color:#FDE100 ;" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-center " href="geschiedenis.html"> Geschiedenis</a></li>
+                  <li><hr class="dropdown-divider bg-black"></li>
+                  <li><a class="dropdown-item text-center" href="teamlijst.html"> Team-lijst</a></li>
+                  <li><hr class="dropdown-divider bg-black"></li>
+                  <li><a class="dropdown-item  text-center" href="stadium.html">Stadion</a></li>
+                  <li><hr class="dropdown-divider bg-black"></li>
+                  <li><a class="dropdown-item  text-center" href="fans.html">Fans</a></li>
+                  <li><hr class="dropdown-divider bg-black "></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+              </li>
+            </ul>
+            </form>
+            
+          </div>
+        </div>
+      </nav>
+    </div>
+  </navbar>
+<main>
+  <header class="mp-5 text-center fw-bold fs-2 mb-2">Contact-pagina</header>
+  <hr class="mb-3" style="color: #FDE100;">
+  
+  <div class="container"> 
+      <div class="row">
+          <div class="col-md-6 col-12 mb-4">
+              <div class="container mt-5">
+                  <div class="card">
+                      <div class="card-body">
+                          <h5 class="card-title "><i class="bi bi-person-fill"></i> <br> Sebastian Kehl (Admin)</h5> <br>
+                          <p class="card-text"><i class="bi bi-telephone-fill"></i> <br> +32 468 17 60 45</p> 
+                          <p class="card-text "><i class="bi bi-envelope-fill"></i> <br> sebastian.kehl@dortmund.com</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+         <div class="col-md-6 col-12 pt-4">
+              <div id="map" style="width: 100%; height: 250px;"></div>
+         </div>
+      </div> 
+  </div>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script>
+      var map = L.map('map').setView([51.492, 7.416], 13);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          maxZoom: 19,
+          attribution: '© OpenStreetMap contributors'
+      }).addTo(map);
+      var marker = L.marker([51.492, 7.416]).addTo(map);
+      marker.bindPopup("<b>Otto-Hahn-Strasse 19</b><br>44227 Dortmund").openPopup();
+  </script>
+
+  <div class="container"> 
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <div class="container mt-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title "><i class="bi bi-person-fill"></i> <br> Quinten Huyge (webdeveloper)</h5> <br>
+                        <p class="card-text"><i class="bi bi-telephone-fill"></i> <br> +32 452 15 63 15</p> 
+                        <p class="card-text "><i class="bi bi-envelope-fill"></i> <br> quinten.huyge@dortmund.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 pt-4">
+          <div id="map2" style="width: 100%; height: 250px;"></div>
+        </div>
+    </div> 
+  </div>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script>
+  var map = L.map('map2').setView([51.492589, 7.451857], 13);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+  var marker = L.marker([51.492589, 7.451857]).addTo(map);
+  marker.bindPopup("<b>Strobelallee 1</b><br>44227 Dortmund").openPopup();
+</script>
+        
+
+  <hr style="color: #FDE100;"">
+
+    <br> <br> 
+    <div class="container">
+      <div class="row">
+          <div class=" col-md-12 mb-4">
+              <p class="fw-bold">Neem contact op met de admin via onderstaand formulier:</p>
+              <form action="mailto:voorbeeld@email.com" method="post" enctype="text/plain">
+                  <div class="form-group mb-3">
+                      <label for="naam">Naam:</label>
+                      <input type="text" name="naam" id="naam" class="form-control">
+                  </div>
+                  <div class="form-group mb-3">
+                      <label for="email">E-mailadres:</label>
+                      <input type="text" name="email" id="email" class="form-control">
+                  </div>
+                  <div class="form-group mb-3">
+                      <label for="bericht">Bericht:</label>
+                      <textarea name="bericht" id="bericht" rows="4" class="form-control"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-warning">Versturen</button>
+              </form>
+          </div>
+      </div>
+  </div>
+  
+  <hr style="color: #FDE100;">
+    
+  <div class="container">
+    <div class="row">
+        <div class=" col-md-12 mb-4">
+            <p class="fw-bold">Neem contact op met de webdeveloper via onderstaand formulier:</p>
+            <form action="mailto:voorbeeld@email.com" method="post" enctype="text/plain">
+                <div class="form-group mb-3">
+                    <label for="naam">Naam:</label>
+                    <input type="text" name="naam" id="naam" class="form-control">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="email">E-mailadres:</label>
+                    <input type="text" name="email" id="email" class="form-control">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="bericht">Bericht:</label>
+                    <textarea name="bericht" id="bericht" rows="4" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning">Versturen</button>
+            </form>
+        </div>
+    </div>
+</div>
+          
+    
+   
+</main>
+    
+</body>

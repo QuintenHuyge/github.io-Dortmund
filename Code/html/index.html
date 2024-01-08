@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oefening</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  
+</head>
+
+<body >
+  <navbar>
+    <div id="nav">
+      <nav class="navbar navbar-expand-lg navbar-warning " style="background-color: #FDE100;" >
+        <div class="container-fluid cont"  bis_skin_checked="1">
+          <a class="navbar-brand" href="#">
+            <img src="/pictures and text/foto's/Borussia_Dortmund_logo.svg.png" width="35" height="35"
+              class="d-inline-block align-top" alt="BVB" loading="lazy" style="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" bis_skin_checked="1">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Klassement.html">Virtuele stadiontour</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Info
+                </a>
+                <ul class="dropdown-menu pb-0 text-center" style="background-color:#FDE100 ;" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-center " href="geschiedenis.html"> Geschiedenis</a></li>
+                  <li><hr class="dropdown-divider bg-black"></li>
+                  <li><a class="dropdown-item text-center" href="teamlijst.html"> Team-lijst</a></li>
+                  <li><hr class="dropdown-divider bg-black"></li>
+                  <li><a class="dropdown-item  text-center" href="stadium.html">Stadion</a></li>
+                  <li><hr class="dropdown-divider bg-black"></li>
+                  <li><a class="dropdown-item  text-center" href="fans.html">Fans</a></li>
+                  <li><hr class="dropdown-divider bg-black "></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" onsubmit="handleSearch(event)">
+              <input class="form-control me-2" type="search" placeholder="Search " aria-label="Search" data-bs-toggle="tooltip" data-bs-placement="right" title="info, klassement, fans, stadium, geschiedenis, team-lijst, contact">
+              <button class="btn btn-outline-dark" type="submit">Search</button>
+              <div id="searchResults"></div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </navbar>
+
+
+  <main>
+ 
+    <header class="text-center fs-1 fw-bold mb-3" style="font-family: Arial, Helvetica, sans-serif;"> Borussia Dortmund</header>
+    <div class="container text-center" id="info">
+     <p>
+      <a class="btn col-4 fw-bold" data-bs-toggle="collapse" href="#dortmundContent" role="button" aria-expanded="false" aria-controls="dortmundContent" style="background-color: #FDE100;">Info Homepage </a>
+     </p>
+       <div class="collapse" id="dortmundContent">
+        <div class="card card-body">
+         <div class="row"> 
+          <div class="col-sm-6">
+            <img src="/pictures and text/foto's/20220906_143412676_iOS.jpg" class="img-fluid" alt="Borussia Dortmund fans">
+          </div>
+          <div class="col-sm-6 fs-3  text-start" style="font-family: Arial, Helvetica, sans-serif;">
+                <p>Sinds mijn jonge jaren volg ik Dortmund al. <br> De fans, het stadium, de sfeer, de spelers en de stad hebben een grote indruk gemaakt op mij als kleine jongen. <br> Vandaar heb ik Borussia Dortmund als topic van mijn site genomen. <br> <br> De ploeg afkomstig van Dortmund, een stad in de Westfalen-regio, leeft enorm. <br> Op matchdagen kleurt de gehele stad zwart-geel.  </p>
+          </div>
+         </div>
+         </div>
+       </div>
+    </div>
+      
+
+        <hr class="text-warning pb-5 ">
+
+        <div class="container-fluid row  justify-content-center">
+          <div class="col-lg-4 shadow-sm" id="klassement">
+            <header class="fw-bolder text-center fs-1 pt-2 pb-2"> Stadion-tour </header> 
+            <a href="Klassement.html">
+             <img class="img-fluid rounded-5 " width="1000px"  src="/pictures and text/foto's/derek-willis-ts2NrUfUnA8-unsplash-600x600.jpg">
+            </a>
+          </div>
+          <div class="col-lg-4 shadow-sm" id="fans">
+            <header class="fw-bolder text-center fs-1 pt-2 pb-2">Fans </header>
+            <a href="fans.html">
+              <img class="img-fluid rounded-5 pb-3" width="1000px"  src="/pictures and text/foto's/BVB_fans.jpg">
+            </a>
+          </div>
+          <div class="col-lg-4 shadow-sm" id="stadium">
+            <header class="fw-bolder text-center fs-1 pt-2 pb-2 "> Stadion </header>
+            <a href="stadium.html">
+              <img class="img-fluid rounded-5 pb-3" width="1000px" src="/pictures and text/foto's/stadium.jpg">
+            </a>
+          </div>
+        </div>
+        <div class="container-fluid" >
+          <div class="row justify-content-center"id="geschiedenis">
+            <div class="col-lg-4 text-center pt-2 pb-2">
+              <header class="fw-bolder fs-1 pt-2 ">Geschiedenis</header>
+              <a href="geschiedenis.html">
+                <img class=" rounded-5 img-fluid"  src="/pictures and text/foto's/BEKER.jpg">
+              </a>
+            </div>
+            <div class="col-lg-4 text-center pt-2 mt-2" id="team-lijst">
+              <header class="fw-bolder fs-1 ">Team-lijst</header>
+              <a href="teamlijst.html">
+                <img class="img-fluid rounded-5 "  src="/pictures and text/foto's/R.jpeg">
+              </a> 
+            </div>
+            <hr class="mt-5 text-warning">
+          </div>
+          <div class="row justify-content-center"id="contact">
+            <div class="col-md-4 text-center ">
+              <header class="fw-bolder fs-1 ">Contact</header>
+              <a href="contact.html">
+                <img class="img-fluid rounded-5" src="/pictures and text/foto's/contact-us-buttons-clipart-design-illustration-free-png.webp">
+              </a>
+            </div>
+          </div>
+        
+    
+    </main>
+    <hr>
+    <div class="text-center p-2" id="top-button-container">
+      <button onclick="document.body.scrollTop = 0; document.documentElement.scrollTop = 0;" class="btn btn-warning ">
+          Terug naar top
+      </button>
+    </div>
+
+
+
+
+<script>
+  function handleSearch(event) {
+      event.preventDefault();
+      const searchTerm = document.querySelector('input[type="search"]').value.toLowerCase();
+      
+      // Assuming the IDs are lowercase
+      const section = document.getElementById(searchTerm);
+      if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+      } else {
+          console.log("Section not found");
+      }
+  }
+</script>
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+</script>
+
+
+</body>
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

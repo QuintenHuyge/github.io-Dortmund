@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    
+        <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>oefening</title>
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+          <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+          <link href="/Code/navbarpadding.css" rel="navbar">
+          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+          <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+          <style>
+            #mapid {
+                height: 400px;
+                width: 100%;
+            }
+        </style>
+          
+         
+         </head>
+        
+        <body>
+          <navbar>
+            <div id="nav">
+              <nav class="navbar navbar-expand-lg navbar-warning"  style="background-color: #FDE100;" >
+                <div class="container-fluid "  bis_skin_checked="1">
+                  <a class="navbar-brand">
+                    <img src="/pictures and text/foto's/Borussia_Dortmund_logo.svg.png" width="35" height="35"
+                      class="d-inline-block align-top" alt="BVB" loading="lazy" style="">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent" bis_skin_checked="1">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Klassement.html">Virtuele stadiontour</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          Info
+                        </a>
+                        <ul class="dropdown-menu active pb-0" style="background-color:#FDE100 ;" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item text-center" href="geschiedenis.html"> Geschiedenis</a></li>
+                          <li><hr class="dropdown-divider bg-black"></li>
+                          <li><a class="dropdown-item text-center" href="teamlijst.html"> Team-lijst</a></li>
+                          <li><hr class="dropdown-divider bg-black"></li>
+                          <li><a class="dropdown-item text-center" href="stadium.html">Stadion</a></li>
+                          <li><hr class="dropdown-divider bg-black"></li>
+                          <li><a class="dropdown-item text-center" href="fans.html">Fans</a></li>
+                          <li><hr class="dropdown-divider bg-black"></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" onsubmit="handleSearch(event)">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" data-bs-toggle="tooltip" data-bs-placement="right" title="info stadion, gele muur, ticketprijzen">
+                      <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </navbar>
+
+         
+          <main>
+            <div class="row">
+              <div class="text-center pt-3">
+               <h1>Signal Iduna Park <br> Stadium Borussia Dortmund</h1> 
+              </div>
+            </div>
+          
+          <div class="row ">
+            <div class="container-fluid pt-2">
+              <img src="/pictures and text/foto's/header signal.jpg_large" alt="banner stadium" class="col-12">
+            </div>
+          </div>
+
+          <div class="container my-4">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center" id="info stadion">Signal Iduna Park Info</h5>
+                            <ul>
+                                <li>Thuishaven Borussia Dortmund</li>
+                                <li>Capaciteit van 81, 365 </li>
+                                <li>Geopend in 1974</li>
+                                <li>Record aantal toeschouwers 83.000 (2004)</li>
+                                <li> Oorspronkelijke naam "Westfalenstadion"</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+               
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Het hart van Dortmund</h5>
+                            <p> Signal Iduna Park, het kloppende hart van Borussia Dortmund, is beroemd om 'De Gele Muur', Europa's grootste staantribune.  Dit stadion, met een bruisende sfeer , is een bastion van voetbalhistorie. Het verenigt fans met een ongekende passie, waardoor elke wedstrijd een uniek spektakel wordt. Signal Iduna Park is niet alleen een stadion, maar een levende legende in de voetbalwereld.</p>
+                          
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="color: #FDE100;">
+
+        <h1 class="text-center" id="gele muur"> De gevreesde gele muur</h1>
+        <div class="container my-4">
+          <div class="row">
+              <div class="col-lg-6">
+                  <div class="card">
+                      <div class="card-body ">
+                          <h5 class="card-title text-center" id="info"> Info gele muur</h5>
+                          <ul >
+                              <li>Die gelbe Wand in het duits</li>
+                              <li>Grootste staantribune Europa</li>
+                              <li>Capaciteit van 24,454 </li>
+                              <li>Ticketprijs : €18,50 </li>
+                              <li>Trouwste fans van Dortmund</li>
+
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+      
+             
+              <div class="col-lg-6">
+                  <div class="card">
+                      <div class="card-body">
+                          <h5 class="card-title text-center">De Gele Muur: Symbool van Trouw</h5>
+                          <p> De Gele Muur is een legendarische staantribune waar 25.000 Dortmund-fans samenkomen. Bekend om haar overweldigende sfeer, staat deze muur van geluid en kleur symbool voor ongeëvenaarde clubliefde. Het is een indrukwekkend schouwspel van eenheid en passie, essentieel voor de identiteit van Borussia Dortmund. Meer dan een tribune, het is een icoon van trouw in de voetbalwereld.</p>
+                        
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-6 px-md-2">
+                <img src="/pictures and text/foto's/gelbe wand.jpeg" class="img-fluid" alt="gele muur">
+            </div>
+    
+            <div class="col-md-6 px-md-2">
+                <img src="/pictures and text/foto's/4gelbewand.jpg" class="img-fluid" alt="gele muur">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+      <div class="row">
+          
+          <div class="col-md-6 px-md-2 pt-2">
+              <img src="/pictures and text/foto's/3gelbewand.jpg" class="img-fluid" alt="gele muur">
+          </div>
+  
+          <div class="col-md-6 px-md-2 pt-2">
+              <img src="/pictures and text/foto's/5gelbewand.jpg" class="img-fluid" alt="gele muur">
+          </div>
+      </div>
+    </div>
+
+      <hr style="color: #FDE100;"">
+
+  <h1 class="text-center pb-3" id="ticketprijzen"> Ticketprijzen </h1>
+    <div class="container">
+       <div class="row">
+          <figure class="col-lg-5 ">
+              <img src="/pictures and text/foto's/Stadionplan_2018_bvbnachricht_voll_regular.png" class="img-fluid" alt="Signal Iduna Park Stadium Plan">
+              <figcaption> plan stadion</figcaption>
+          </figure>
+          <div class="col-md-1 col-lg-1">
+             <img src="/pictures and text/foto's/categorie.png" class="img-fluid" alt="Ticket Categories">
+          </div>
+          <div class="col-lg-6 order">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Categorie</th>
+                        <th scope="col">Prijs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cat. 15</td>
+                        <td>€90.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cat. 1</td>
+                        <td>€70.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cat. 2</td>
+                        <td>€62.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cat. 3</td>
+                        <td>€58.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cat. 4</td>
+                        <td>€55.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cat. 4 Familieblock</td>
+                        <td>€55.00</td>
+                    </tr>
+                    <tr>
+                        <td>Kinderen (onder 14j)</td>
+                        <td>€10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cat. 5</td>
+                        <td>€44.00</td>
+                    </tr>
+                    <tr>
+                        <td>Cat. 6</td>
+                        <td>€35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Jongeren (Onder 18j)</td>
+                        <td>€25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Staanplaats Nord BVB</td>
+                        <td>€18.50</td>
+                    </tr>
+                    <tr>
+                        <td>Staanplaats Sud</td>
+                        <td>€18.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+      <hr style="color: #FDE100;">
+
+      <div id="mapid"></div>
+
+      <hr style="color: #FDE100;">
+
+      <div class="text-center pt-3" id="top-button-container">
+        <button onclick="document.body.scrollTop = 0; document.documentElement.scrollTop = 0;" class="btn btn-warning ">
+          Terug naar top
+        </button>
+      </div>
+
+      
+          
+       </main>
+    
+          <script>
+            function handleSearch(event) {
+                event.preventDefault();
+                const searchTerm = document.querySelector('input[type="search"]').value.toLowerCase();
+                
+                
+                const section = document.getElementById(searchTerm);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                    console.log("Section not found");
+                }
+            }
+          </script>
+        </body>
+
+
+        <script>
+          var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+          var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+              return new bootstrap.Tooltip(tooltipTriggerEl)
+          })
+        </script>
+
+<script>
+  var map = L.map('mapid').setView([51.492273, 7.451857], 13);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  var marker = L.marker([51.492273, 7.451857]).addTo(map);
+  marker.bindPopup("<b>Signal Iduna Park</b>").openPopup();
+</script>
+
+
+      
+
+
+
+</html>
